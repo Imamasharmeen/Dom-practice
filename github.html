@@ -11,8 +11,11 @@
     <button id="btn-delete" disabled>Delete</button>
     <script>
         document.getElementById('delete-confirm').addEventListener('keyup', function(event){
-            const text= event.target.value;
-            
+            const text= event.target;
+            console.log(text);
+            const texted= event.target.value;
+            console.log(texted);
+
             const deleteButton = document.getElementById('btn-delete');
             if (text === 'delete'){
                 deleteButton.removeAttribute('disabled');               
